@@ -1,0 +1,53 @@
+
+
+<div class="contaner">
+    <div class="card">
+        <div class="card-header">
+                <div class="card-header-title"><%= @article.title %></div>
+        </div> 
+
+        <div class="card-body">
+            <p><%= @article.body %></p>
+        </div>   
+    </div>
+
+    <div class="nav-right">
+        <%= link_to "Home", root_path(), class: "btn btn-success" %>
+       <%= link_to "Edit", edit_article_path(@article), class: "btn btn-warning" %>
+        <%= link_to "Destroy", article_path(@article),class: "btn btn-danger", data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure?"
+                    } %>
+
+    
+        
+    </div>
+  </div>  
+
+
+<div class="row">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-title">Comments</div>
+        </div>
+                        
+        <div class="card-body">
+            <%= render @article.comments %>
+        </div>      
+
+    </div>    
+</div>
+
+
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+            <div class="card-header-title">Add a comment:</div>
+            </div>
+            <div class="card-body">         
+                   <%= render 'comments/form' %>
+            </div>
+        </div>    
+    </div>
+
+

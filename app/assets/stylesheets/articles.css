@@ -1,0 +1,113 @@
+
+body {
+ background: wheat ;
+ 
+}
+
+.contaner {
+  /* display: flex;
+  justify-content: center; */
+  padding: 10px auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.card-header-title {
+  padding: 3px;
+  font-size: 1.5em;
+}
+
+.list-articles{
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+
+.item-article {
+  flex: 1;
+  width: auto;
+  margin: 3px;
+  padding: 5px;
+  background-color: darkgrey;
+  border:solid 1px gray;
+  border-radius: 3px;
+}
+
+.item-article:hover{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.linck-item-article {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;  
+  min-width: 80px;
+  max-width: 320px;
+  padding: 5px;
+  margin: 3px;
+  text-align: center;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-danger {
+  color: white;
+  background-color: #df4759;
+  border:solid 1px #df4759;
+  border-radius: 3px;
+}
+
+.btn-success {
+  color: white;
+  background-color: #42ba96;
+  border:solid 1px #42ba96;
+  border-radius: 3px;
+}
+
+.btn-warning {
+  color: white;
+  background-color: #ffc107;
+  border:solid 1px #ffc107;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #7c69ef;
+  border:solid 1px #7c69ef;
+  border-radius: 3px;
+}
+
+.row {
+  flex-direction: row;
+
+
+}
