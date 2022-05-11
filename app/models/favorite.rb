@@ -1,5 +1,6 @@
 class Favorite < ApplicationRecord
-    has_many :articles
+    belongs_to :article
+    belongs_to :user
 
     validates :added_to, presence: true
 end

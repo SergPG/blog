@@ -12,6 +12,19 @@
 
   <body>
    <div class="contaner">
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+        <% if user_signed_in? %>
+          <p> User Email <%= current_user.email %> </p>
+          <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class:"btn btn-success" %>
+
+        <% else %>  
+           <p>NOT USER</p>
+           <%= button_to "Sign In", new_user_session_path, method: :get, class:"btn btn-success" %>
+        <% end %>   
+
+
      <%= yield %>
    </div> 
   </body>
