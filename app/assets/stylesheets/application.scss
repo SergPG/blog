@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
- @import '/app/assets/stylesheets/normalize.css';
+ 
 
- @import '/app/assets/stylesheets/articles.css';
+//  @import '/app/assets/stylesheets/normalize.css';
+
+//  @import '/app/assets/stylesheets/articles.css';
+
+// here your custom bootstrap variables...
+@import "bootstrap";
+
+
+ 
